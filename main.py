@@ -1,3 +1,6 @@
+#Nenad Beric - SV23/2021
+#Popravljam kolokvijum 1
+
 import matplotlib.pyplot as plt
 import cv2
 import sys
