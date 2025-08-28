@@ -1,5 +1,5 @@
 #Nenad Beric - SV23/2021
-#Popravljam kolokvijum 1
+#Chat gpt je koriscen pri izradi zadatka
 
 import matplotlib.pyplot as plt
 import cv2
