@@ -25,10 +25,6 @@ def detect_counts(image):
 
     image_bin = cv2.adaptiveThreshold(img_gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, 15, 5)
 
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-    edges_clean = cv2.dilate(image_bin, kernel, iterations=1)
-    edges_clean = cv2.erode(edges_clean, kernel, iterations=1)
-
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7))
     filled = cv2.morphologyEx(image_bin, cv2.MORPH_CLOSE, kernel, iterations=2)
 
